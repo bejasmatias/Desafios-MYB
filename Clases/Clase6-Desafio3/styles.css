@@ -69,32 +69,7 @@ body {
     flex-grow: 1;
     padding-right: 40px;
   }
-  
-  .date-input .material-icons {
-    margin-left: 5px;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .checkbox-container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5px;
-  }
-  
-  .checkbox-group {
-    display: flex;
-    align-items: center;
-    margin-left: 4px;
-    
-  }
-  
-  .checkbox-group input[type="checkbox"] {
-    margin-left: 24px;
-    margin-top: 4px;
-  
-  }
-  
+
   button {
     margin-top: 18px;
     background-color: #0f700f;
@@ -107,7 +82,7 @@ body {
   }
   
   button:hover {
-    background-color: #6A1B9A;
+    background-color: #69b927;
   }
   
   .error {
