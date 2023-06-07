@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- Icono de la página -->
   <link rel="icon" href="argentina.png" />
 
-  <title > ARGENTINIAN ARMY</title>
+  <title>ARGENTINA'S ARMY</title>
 
+  <!-- Estilos de terceros -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -18,42 +19,52 @@
 </head>
 <body>
   
-  
+  <!-- Formulario de registro -->
   <form id="registration-form">
 
     <h1>JOIN THE ARMY</h1>
 
+    <!-- Campo de nombre -->
     <label for="first-name">First Name:</label>
     <input type="text" id="first-name" name="first-name" required pattern="[A-Za-z]+" />
     
+    <!-- Campo de apellido -->
     <label for="last-name">Last Name:</label>
     <input type="text" id="last-name" name="last-name" required pattern="[A-Za-z]+" />
     
+    <!-- Campo de nombre de usuario -->
     <label for="username">Username:</label>
     <input type="text" id="username" name="username" required minlength="4" />
     
+    <!-- Campo de contraseña -->
     <label for="password">Password:</label>
     <input type="password" id="password" name="password" required minlength="6" />
     
+    <!-- Confirmación de contraseña -->
     <label for="confirm-password">Confirm Password:</label>
     <input type="password" id="confirm-password" name="confirm-password" required minlength="6" />
     
-    <label for="birthdate" >Birthdate:</label>
+    <!-- Campo de fecha de nacimiento -->
+    <label for="birthdate">Birthdate:</label>
     <div class="date-input">
       <input type="text" id="birthdate" name="birthdate" required placeholder="DD-MM-YYYY" />
     </div>
     
+    <!-- Checkbox de suscripción al boletín -->
     <label class="newsletter-checkbox">
       <input type="checkbox" id="newsletter-checkbox" name="newsletter-checkbox" /> Subscribe to newsletter
     </label>
     
+    <!-- Checkbox de aceptación de términos y condiciones -->
     <label class="terms-checkbox">
       <input type="checkbox" id="terms-checkbox" name="terms-checkbox" required /> Agree to terms and conditions
     </label>
 
+    <!-- Botón de envío del formulario -->
     <button type="submit">Register now</button>
   </form>
 
+  <!-- Archivo JavaScript -->
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 </body>
