@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url("camo-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 8px;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 4px;
+    color: #333;
+    width: 220px;
+  }
+  
+  .newsletter-checkbox {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    color: #333;
+    width: 420px;
+  }
+  
+  .terms-checkbox {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 10px;
+    color: #333;
+    width: 420px;
+  }
+  
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #bdbcbc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .date-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .date-input input {
+    flex-grow: 1;
+    padding-right: 40px;
+  }
+  
+  .date-input .material-icons {
+    margin-left: 5px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-left: 4px;
+    
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-left: 24px;
+    margin-top: 4px;
+  
+  }
+  
+  button {
+    margin-top: 18px;
+    background-color: #0f700f;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #6A1B9A;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 5px;
+  }
+  
