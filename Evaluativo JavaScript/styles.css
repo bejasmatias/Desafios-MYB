@@ -1,0 +1,72 @@
+/* realizar una
+función que permita obtener un nuevo arreglo de objetos 
+
+cada objeto consta del
+nombre del usuario, su email, su dirección completa, su compañía, el título de la película vista y
+la calificación de la misma 
+
+La función debe poseer un filtro por fecha, por calificación y por id
+de usuario. Si no se envía un userId, la función deberá devolver todas las películas que cumplan
+las condiciones de los filtros de fecha y calificación para todos los usuarios existentes */
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+  }
+  
+  .left-section {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .right-section {
+    flex: 3;
+    padding: 20px;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  form div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #carousel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
