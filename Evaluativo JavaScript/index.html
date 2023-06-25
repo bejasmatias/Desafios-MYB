@@ -1,39 +1,51 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>MOVIE TIME</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>MOVIE TIME</h1>
-  </header>
 
-  <main>
-    <section class="left-section">
-      <h2>Your movie filter</h2>
-      <form id="search-form">
-        <div>
-          <label for="date-input">Date:</label>
-          <input type="date" id="date-input" required>
-        </div>
-        <div>
-          <label for="rating-input">Rating:</label>
-          <input type="number" id="rating-input" min="0" max="10" step="0.1" required>
-        </div>
-        <div>
-          <label for="userId-input">User ID:</label>
-          <input type="number" id="userId-input" >
-        </div>
-        <button type="submit" id="find-button">Find</button>
-      </form>
-    </section>
-
-    <section class="right-section">
-      <div id="carousel"></div>
-    </section>
-  </main>
-
-  <script src="./scripts/movies-filter.js"></script>
-</body>
-</html>
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>MOVIE TIME</title>
+ 
+   <link rel="stylesheet" type="text/css" href="styles.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:400,600&display=swap" rel="stylesheet">
+ </head>
+ <body>
+   <header>
+     <h1 class="main-title">MOVIE TIME</h1>
+   </header>
+ 
+   <main class="main">
+     <section class="left-section">
+       <h2 class="section-title">Your movie filter</h2>
+       <form id="search-form">
+         <div>
+           <label for="from-date-input"> Date filter</label>
+           <input class="from-date-input" type="date" id="from-date-input" placeholder="">
+         </div>
+         <div>
+           <input class="to-date-input" type="date" id="to-date-input" placeholder="">
+         </div>
+         <div>
+           <label for="rating-input">Rating</label>
+           <input class="from-rating-input" type="number" id="rating-input" min="0" max="10" step="0.1" placeholder="From">
+           <input class="to-rating-input" type="number" id="rating-input" min="1" max="10" step="2" placeholder="To">
+         </div>
+         <div>
+           <label for="userId-input">User ID</label>
+           <input type="number" id="userId-input"  min="0" max="100" step="1">
+         </div>
+         <button type="submit" id="find-button">Find</button>
+       </form>
+     </section>
+ 
+     <section class="middle-section">
+       <ul id="movieList"></ul>
+     </section>
+ 
+     <section class="right-section">
+       <ul id="userList"></ul>
+     </section>
+   </main>
+ 
+   <script src="scripts/movies-filter.js"></script>
+ </body>
+ </html>
+ 
