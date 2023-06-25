@@ -56,7 +56,10 @@ body {
     margin-bottom: 8px;
   }
 
-  
+  .from-rate-input {
+    margin-bottom: 8px;
+  }
+
   label {
     display: block;
     margin-top: 4px;
@@ -83,6 +86,7 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    margin-left: 50px;
   }
   
   /* Estilos para las imágenes de las películas */
@@ -93,4 +97,6 @@ body {
     height: 140px;
     object-fit: cover;
   }
+  
+
   
