@@ -40,7 +40,7 @@ align-items: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
 }
 
 .loading-message{
@@ -56,4 +56,3 @@ align-items: center;
 .list li {
   margin-bottom: 16px;
 }
-

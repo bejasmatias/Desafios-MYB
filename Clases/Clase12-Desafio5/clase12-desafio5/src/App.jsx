@@ -41,7 +41,7 @@ const App = () => {
             <div>
 
               <header className="main-section-father">
-                <h1 className="title"> Publicaciones </h1>
+                <h1 className="title">Lorem info </h1>
               </header>
 
               <div className="list-container">
