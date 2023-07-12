@@ -49,7 +49,7 @@ const App = () => {
           ) : (
             <div>
               <header className="main-section-father">
-                <h1 className="title">Lorem information</h1>
+                <h1 className="title">Publicaciones</h1>
               </header>
               <div className="list-container">
                 <ul className="list">
