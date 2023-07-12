@@ -1,32 +1,41 @@
-import { useEffect, useState } from "react"; //import JUST the hooks I'll use
+import { useEffect, useState } from "react";
 
 const App = () => {
-  const [data, setData] = useState([]); //declare states for the fetch
-  const [error, setError] = useState(""); //use state for the error I need to show
-  const [isLoading, setIsLoading] = useState(true); //for the text I want to show until the page loads
+  const [data, setData] = useState([]);
+  const [error, setError] = useState("");
+  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => { //I keep everything inside the useEffect, so that the page wont refresh everytime
-
+  useEffect(() => {
     const getFetch = async () => {
       try {
         const response = await fetch("https://jsonplaceholder.typicode.com/posts");
 
-        if (!response.ok) { //check if the fetch geneterated a response
-          throw new Error("An error occured while loading. Please try again"
-          );
+        if (!response.ok) {
+          throw new Error("An error occurred while loading. Please try again");
         }
 
-        const data = await response.json(); //save the info in 'data'
-        setData(data);
-      } catch (error) { //execute the error
+        const data = await response.json();
+        const transformedData = data.map((post) => ({
+          ...post,
+          title: capitalizeFirstLetter(post.title)
+        }));
+        
+        setData(transformedData);
+      } catch (error) {
         console.error("ERROR REQUEST", error);
-        setError("An error occured while loading. Please try again"); // displays the error on screen
+        setError("An error occurred while loading. Please try again");
       } finally {
         setIsLoading(false);
       }
     };
 
-    getFetch(); //call getFetch
+    const capitalizeFirstLetter = (str) => {
+      return str.charAt(0).toUpperCase() + str.slice(1);
+    };
+
+    setTimeout(() => {
+      getFetch();
+    }, 3000);
   }, []);
 
   return (
@@ -39,17 +48,18 @@ const App = () => {
             <p>{error}</p>
           ) : (
             <div>
-
               <header className="main-section-father">
-                <h1 className="title">Lorem info </h1>
+                <h1 className="title">Lorem information</h1>
               </header>
-
               <div className="list-container">
-
                 <ul className="list">
-                  {data.map(post => (<li key={post.id}>{post.title}</li>
+                  {data.map((post) => (
+                    <li className="items" key={post.id}>
+                      {post.title}
+                    </li>
                   ))}
-                </ul></div>
+                </ul>
+              </div>
             </div>
           )}
         </div>
